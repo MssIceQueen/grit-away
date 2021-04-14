@@ -5,40 +5,189 @@
         <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
         <!-- Bootstrap CSS -->
-        <link href="./css/bootstrap-grid.min.css" rel="stylesheet">
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <link href="./css/bootstrap-utilities.min.css" rel="stylesheet">
+        <link href="./css/bootstrap-grid.css" rel="stylesheet">
+        <link href="./css/bootstrap.css" rel="stylesheet">
         <script src="./js/bootstrap.bundle.js"></script>
         <title>Title</title>
+        <style>
+            .blue {
+                background-color: #b6effb;
+            }
+
+            .card {
+                background-color: #badce3;
+            }
+
+            .butlink {
+                padding: 5px;
+                transition: 0.5s;
+                border-radius: 15px;
+            }
+
+            .butlink:hover {
+                background: dodgerblue;
+                box-shadow: 0px 3px 8px 1px lightskyblue;
+                color: white;
+                padding: 5px;
+                text-decoration: none;
+                border-radius: 15px;
+            }
+
+        </style>
     </head>
-    <body>
-        <div class="container">
-            <div class="row justify-content-around">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    1
+    <body class="blue">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 px-2 p-5">
+                    <nav class="nav flex-column sticky-top d-md-block d-none align-top">
+                        <a class="nav-link active border-bottom " href="https://getbootstrap.com/" target="_blank"
+                           title="getbootstrap">Home</a>
+                        <a class="nav-link active border-bottom "
+                           href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank"
+                           title="get started">Get started</a>
+                        <a class="nav-link active border-bottom "
+                           href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank"
+                           title="Introduction">Introduction</a>
+                        <a class="nav-link active border-bottom "
+                           href="https://getbootstrap.com/docs/5.0/getting-started/download/" target="_blank"
+                           title="download">Download</a>
+                    </nav>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    2
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    3
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    4
-                </div>
-            </div>
-            <div class="row justify-content-around">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    1
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    2
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    3
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    4
+                <div class="col-lg-11 col-md-11 col-sm-12 ">
+                    <div class="container-fluid p-3 ml-6">
+                        <div class="row float-md-start gy-5">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 align-content-center p-5">
+                                <div class="card p-3 shadow">
+                                    <img alt="office" class="d-block mx-auto" height="100px" src="./office.png">
+                                    <h1 class="text-center ">About</h1>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet at, qui quis
+                                        delectus dolorum exercitationem maxime aut adipisci, excepturi voluptatum p
+                                    </p>
+                                    <a class="d-block mx-auto align-text-bottom butlink text-center text-uppercase"
+                                       data-placement="top" data-toggle="tooltip" title="getbootstrap"
+                                       href="https://getbootstrap.com/" target="_blank">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 align-content-center p-5">
+                                <div class="card p-3 shadow">
+                                    <img alt="tools" class="d-block mx-auto" height="100px" src="./settings.png">
+                                    <h1 class="text-center ">Tools</h1>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet at, qui quis
+                                        delectus dolorum exercitationem maxime aut adipisci, excepturi voluptatum p
+                                    </p>
+                                    <a class="d-block mx-auto align-text-bottom butlink text-center text-uppercase"
+                                       data-placement="top" data-toggle="tooltip" title="buildtools"
+                                       href="https://getbootstrap.com/docs/5.0/getting-started/build-tools/"
+                                       target="_blank">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 align-content-center p-5">
+                                <div class="card p-3 shadow">
+                                    <img alt="guide" class="d-block mx-auto" height="100px" src="./light.png">
+                                    <h1 class="text-center ">How it works</h1>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet at, qui
+                                        quis
+                                        delectus dolorum exercitationem maxime aut adipisci, excepturi voluptatum p
+                                    </p>
+                                    <a class="d-block mx-auto align-text-bottom butlink text-center text-uppercase"
+                                       data-placement="top" data-toggle="tooltip" title="guide"
+                                       href="https://getbootstrap.com/docs/4.6/layout/grid/#how-it-works"
+                                       target="_blank">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 align-content-center p-5">
+                                <div class="card p-3 shadow">
+                                    <img alt="folder" class="d-block mx-auto" height="100px"
+                                         src="./folder.png">
+                                    <h1 class="text-center ">Icons</h1>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet at,
+                                        qui quis
+                                        delectus dolorum exercitationem maxime aut adipisci, excepturi
+                                        voluptatum p
+                                    </p>
+                                    <a class="d-block mx-auto align-text-bottom butlink text-center text-uppercase"
+                                       data-placement="top" data-toggle="tooltip" title="icons"
+                                       href="https://icons.getbootstrap.com/"
+                                       target="_blank">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gy-5">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 align-content-center p-5">
+                                <div class="card p-3 shadow">
+                                    <img alt="flower" class="d-block mx-auto" height="100px"
+                                         src="./flower.png">
+                                    <h1 class="text-center ">Expo</h1>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+                                        at, qui quis
+                                        delectus dolorum exercitationem maxime aut adipisci, excepturi
+                                        voluptatum p
+                                    </p>
+                                    <a class="d-block mx-auto align-text-bottom butlink text-center text-uppercase"
+                                       data-placement="top" data-toggle="tooltip" title="bootstrapexpo"
+                                       href="https://expo.getbootstrap.com/"
+                                       target="_blank">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 align-content-center p-5">
+                                <div class="card p-3 shadow">
+                                    <img alt="eye" class="d-block mx-auto" height="100px"
+                                         src="./eye.png">
+                                    <h1 class="text-center ">Themes</h1>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Eveniet at, qui quis
+                                        delectus dolorum exercitationem maxime aut adipisci, excepturi
+                                        voluptatum p
+                                    </p>
+                                    <a class="d-block mx-auto align-text-bottom butlink text-center text-uppercase"
+                                       data-placement="top" data-toggle="tooltip" title="themes"
+                                       href="https://themes.getbootstrap.com/"
+                                       target="_blank">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 align-content-center p-5">
+                                <div class="card p-3 shadow">
+                                    <img alt="cloud" class="d-block mx-auto" height="100px"
+                                         src="./cloud.png">
+                                    <h1 class="text-center ">Contributors</h1>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Eveniet at, qui quis
+                                        delectus dolorum exercitationem maxime aut adipisci,
+                                        excepturi voluptatum p
+                                    </p>
+                                    <a class="d-block mx-auto align-text-bottom butlink text-center text-uppercase"
+                                       data-placement="top" data-toggle="tooltip" title="contributors"
+                                       href="https://github.com/twbs/bootstrap/graphs/contributors"
+                                       target="_blank">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 align-content-center p-5">
+                                <div class="card p-3 shadow">
+                                    <img alt="phone" class="d-block mx-auto" height="100px"
+                                         src="./phone.png">
+                                    <h1 class="text-center ">Contact</h1>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Eveniet at, qui quis
+                                        delectus dolorum exercitationem maxime aut adipisci,
+                                        excepturi voluptatum p
+                                    </p>
+                                    <a class="d-block mx-auto align-text-bottom butlink text-center text-uppercase"
+                                       data-placement="top" data-toggle="tooltip"
+                                       title="howtocontribute"
+                                       href="https://getbootstrap.com/docs/5.0/about/team/"
+                                       target="_blank">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
